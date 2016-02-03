@@ -1,0 +1,105 @@
+@import "builds/reset.less";
+@import "presets/global.less";
+
+/* GOOGLE FONTS
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Patrick Hand', cursive;
+    font-family: 'Itim', cursive;
+    font-family: 'Noticia Text', serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Patrick Hand SC', cursive;
+*/
+
+// Global
+
+// Flex Properties
+.hc-container {
+    display: flex;
+    max-width: 1024px;
+    margin:  0 auto;
+    flex-direction: column;
+}
+
+// Header
+    
+.hc-header {
+    display: flex;
+    height: 100px;
+    border-bottom: 1px solid white;
+    
+    .logo {
+        background: @darkest-green;
+        color:  white;
+        width: 250px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        
+        .logo-top {
+            font-family: 'Lobster', cursive;
+            font-size: 40px;
+        }
+        
+        .logo-bottom {
+            font-family: 'Alegreya Sans SC', sans-serif;
+            font-size: 20px;
+        }
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex: 1 1 auto;
+        font-family: 'Patrick Hand', cursive;
+        color: @darker-gray;
+        font-size: 20px;
+    }
+}
+    
+.hc-main {
+    .hc-main-feature{
+        height: 600px;
+        .hc-main-feature-bg{
+            height: inherit;
+            background-image: url(http://www.hdwallpapers.in/walls/blue_background_abstract-wide.jpg);
+            background-position: 50% 50%;
+            background-size: 100%;
+            position: absolute;
+            right: 0;
+            left: 0;
+            z-index: 0;
+        }
+        
+        .hc-main-feature-content {
+            position: relative;
+            z-index: 1;
+            height: inherit;
+            
+            .hc-main-feature-item {
+                height: inherit;
+                width: 40%;
+                background: rgba(255,255,255,.5);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-family: 'Noticia Text', serif;
+                font-size: 40px;
+                padding: 0 1em;
+                text-align: center;
+                color: @darker-gray;
+            }
+        }
+    }
+}
+    
+.hc-footer {
+    display: flex;
+    height: 200px;
+}
+
