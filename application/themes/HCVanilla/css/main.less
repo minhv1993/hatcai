@@ -1,105 +1,68 @@
-@import "builds/reset.less";
-@import "presets/global.less";
+/* Import bootstrap 3 mixins and variables so we can use them */
+@import "build/bootstrap-3.2.0/variables.less";
+@import "build/bootstrap-3.2.0/mixins.less";
 
-/* GOOGLE FONTS
-    font-family: 'Roboto Condensed', sans-serif;
-    font-family: 'Roboto Slab', serif;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-family: 'Lobster', cursive;
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-family: 'Patrick Hand', cursive;
-    font-family: 'Itim', cursive;
-    font-family: 'Noticia Text', serif;
-    font-family: 'Kanit', sans-serif;
-    font-family: 'Patrick Hand SC', cursive;
-*/
+/* Import core mixins so we can use them */
+@import "../../../css/build/core/include/mixins.less";
 
-// Global
+/* Import our theme variables. */
+@import "presets/defaults.less";
 
-// Flex Properties
-.hc-container {
-    display: flex;
-    max-width: 1024px;
-    margin:  0 auto;
-    flex-direction: column;
+/* Import our theme mixins */
+@import "./build/mixins.less";
+
+/* Import our theme fonts */
+//@import "build/fonts.less";
+
+@import ~"@{preset-fonts-file}";
+
+/* Our style rules - namespace so as not to collide with the core app styles */
+@import "build/body.less";
+@import "build/content.less";
+div.ccm-page {
+  @import "build/errors.less";
+  @import "build/header.less";
+  @import "build/pagination.less";
+  @import "build/breadcrumb.less";
+  @import "build/captcha.less";
+  @import "build/search.less";
+  @import "build/buttons.less";
+
+  @import "build/custom-design-classes/block-sidebar-padded.less";
+  @import "build/custom-design-classes/block-sidebar-wrapped.less";
+  @import "build/custom-design-classes/blog-entry-list.less";
+  @import "build/custom-design-classes/recent-blog-entry.less";
+  @import "build/custom-design-classes/area-content-accent.less";
+  @import "build/custom-design-classes/testimonial-bio.less";
+
+  @import "build/blocks/faq.less";
+  @import "build/blocks/feature.less";
+  @import "build/blocks/feature-template-hover-description.less";
+  @import "build/blocks/image-slider.less";
+  @import "build/blocks/image.less";
+  @import "build/blocks/next-previous.less";
+  @import "build/blocks/page-list-option-buttons.less";
+  @import "build/blocks/page-list-template-thumbnail-grid.less";
+  @import "build/blocks/page-list.less";
+  @import "build/blocks/page-attribute-display.less";
+  @import "build/blocks/page-title.less";
+  @import "build/blocks/page-title-option-byline.less";
+  @import "build/blocks/testimonial.less";
+  @import "build/blocks/tags.less";
+  @import "build/blocks/topic-list.less";
+  @import "build/blocks/date-navigation.less";
+
+  @import "build/add-ons/calendar.less";
+
 }
 
-// Header
-    
-.hc-header {
-    display: flex;
-    height: 100px;
-    border-bottom: 1px solid white;
-    
-    .logo {
-        background: @darkest-green;
-        color:  white;
-        width: 250px;
-        display: flex;
-        flex-flow: column wrap;
-        align-items: center;
-        justify-content: center;
-        
-        .logo-top {
-            font-family: 'Lobster', cursive;
-            font-size: 40px;
-        }
-        
-        .logo-bottom {
-            font-family: 'Alegreya Sans SC', sans-serif;
-            font-size: 20px;
-        }
-    }
-    
-    .navbar {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        flex: 1 1 auto;
-        font-family: 'Patrick Hand', cursive;
-        color: @darker-gray;
-        font-size: 20px;
-    }
-}
-    
-.hc-main {
-    .hc-main-feature{
-        height: 600px;
-        .hc-main-feature-bg{
-            height: inherit;
-            background-image: url(http://wallpoper.com/images/00/45/05/47/green-background-2_00450547.jpg);
-            background-position: 50% 50%;
-            background-size: 100%;
-            position: absolute;
-            right: 0;
-            left: 0;
-            z-index: 0;
-        }
-        
-        .hc-main-feature-content {
-            position: relative;
-            z-index: 1;
-            height: inherit;
-            
-            .hc-main-feature-item {
-                height: inherit;
-                width: 40%;
-                background: rgba(255,255,255,.5);
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                font-family: 'Noticia Text', serif;
-                font-size: 40px;
-                padding: 0 1em;
-                text-align: center;
-                color: @darker-gray;
-            }
-        }
-    }
-}
-    
-.hc-footer {
-    display: flex;
-    height: 200px;
-}
+@import "build/miscellaneous-styles.less";
+@import "build/footer.less";
+@import "build/mobile/navigation.less";
 
+/* CSS with background images – we need these directives to be in the root of theme
+ * otherwise we can't both map the stylesheet to them AND the customizer to them
+ */
+.ccm-image-slider-container {
+  background-image: url(@image-slider-background-image);
+}

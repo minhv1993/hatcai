@@ -1,3 +1,5 @@
 
 /application/files
 /application/config/local.database.php
+/bin
+web.config
