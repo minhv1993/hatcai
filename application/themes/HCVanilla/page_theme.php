@@ -1,6 +1,6 @@
 <?php
 
-namespace Concrete\Theme\Elemental;
+namespace Concrete\Theme\HCVanilla;
 
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 
@@ -35,12 +35,12 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
 
     public function getThemeName()
     {
-        return t('Elemental');
+        return t('HCVanilla');
     }
 
     public function getThemeDescription()
     {
-        return t('Elegant, spacious theme with support for blogs, portfolios, layouts and more.');
+        return t('Default theme for Hat Cai website. Elegant, spacious theme with support for blogs, portfolios, layouts and more.');
     }
 
     public function getThemeBlockClasses()
