@@ -3,4 +3,4 @@
 /application/config/local.database.php
 /bin
 web.config
-/vwd.webinfo
+/application/config/generated_overrides
