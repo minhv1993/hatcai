@@ -1,7 +1,5 @@
 
 /application/files
-/application/config/local.database.php
+/application/config
 /bin
 web.config
-/application/config/generated_overrides
-/application/config/generated_overrides/concrete.php
