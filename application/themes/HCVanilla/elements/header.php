@@ -8,7 +8,7 @@ $displayThirdColumn = $blocks > 0 || $c->isEditMode();
 
 <header class="hc-header">
     <div class="container">
-        <div class="row">
+        <div class="row bottom-xs">
             <div class="xs-12 sm-4">
                 <a class="hc-logo" href="/">
                     <span class="logo-top">Hạt Cải</span>
