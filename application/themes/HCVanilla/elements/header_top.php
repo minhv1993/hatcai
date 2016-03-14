@@ -3,6 +3,7 @@
 <html lang="<?php echo Localization::activeLanguage()?>">
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Patrick+Hand+SC|Kanit:400,600italic,600,500italic,500,400italic,700,700italic,300italic,300,200italic,200|Itim|Patrick+Hand|Alegreya+Sans+SC:400,700,700italic,800,400italic,500,500italic,300italic,300,800italic|Noticia+Text:400,400italic,700,700italic|Lobster|Open+Sans+Condensed:300,700|Roboto+Slab:400,300,700|Roboto+Condensed:400,300,300italic,400italic,700,700italic&subset=latin,vietnamese' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">
     <?php echo $html->css($view->getStylesheet('main.less'))?>
     <?php Loader::element('header_required', array('pageTitle' => isset($pageTitle) ? $pageTitle : '', 'pageDescription' => isset($pageDescription) ? $pageDescription : ''));?>

@@ -1,6 +1,6 @@
 <?php
 
-namespace Concrete\Theme\HCVanilla;
+namespace Application\Theme\HCVanilla;
 
 use Concrete\Core\Area\Layout\Preset\Provider\ThemeProviderInterface;
 

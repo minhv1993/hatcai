@@ -4,6 +4,7 @@ use Concrete\Core\Page\Theme\GridFramework\Type\Bootstrap2;
 use Concrete\Core\Page\Theme\GridFramework\Type\Bootstrap3;
 use Concrete\Core\Page\Theme\GridFramework\Type\NineSixty;
 use Concrete\Core\Page\Theme\GridFramework\Type\Foundation;
+use Concrete\Core\Page\Theme\GridFramework\Type\Flexbox;
 use Concrete\Core\Support\Manager as CoreManager;
 
 class Manager extends CoreManager
@@ -27,6 +28,11 @@ class Manager extends CoreManager
     protected function createFoundationDriver()
 	{
         return new Foundation();
+	}
+    
+    protected function createFlexboxDriver()
+	{
+        return new Flexbox();
 	}
 
 }

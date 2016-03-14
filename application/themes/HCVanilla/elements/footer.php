@@ -13,13 +13,13 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
     <section>
     <div class="container">
         <div class="row">
-            <div class="col-sm-9">
+            <div class="sm-9">
                 <?php
                 $a = new GlobalArea('Footer Site Title');
                 $a->display();
                 ?>
             </div>
-            <div class="col-sm-3">
+            <div class="sm-3">
                 <?php
                 $a = new GlobalArea('Footer Social');
                 $a->display();
@@ -32,19 +32,19 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
     <section>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
+            <div class="sm-6">
             <?php
             $a = new GlobalArea('Footer Legal');
             $a->display();
             ?>
             </div>
-            <div class="col-sm-3">
+            <div class="sm-3">
                 <?php
                 $a = new GlobalArea('Footer Navigation');
                 $a->display();
                 ?>
             </div>
-            <div class="col-sm-3">
+            <div class="sm-3">
                 <?php
                 $a = new GlobalArea('Footer Contact');
                 $a->display();
@@ -58,7 +58,7 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
 <footer id="concrete5-brand">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="sm-12">
                 <span><?php echo t('Built with <a href="http://www.concrete5.org" class="concrete5">concrete5</a> CMS.')?></span>
                 <span class="pull-right">
                     <?php echo Core::make('helper/navigation')->getLogInOutLink()?>
