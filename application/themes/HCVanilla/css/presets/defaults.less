@@ -34,38 +34,74 @@
 
 
 // Color templates
-@green-dark: #003300;
+@green-darker: #003300;
+@green-dark: #005A31;
+@green: #A8CD1B;
+@green-light: #CBE32D;
+@green-lighter: #CAE176;
+
+@blue-darkest: #003d66;
+@blue-darker: #005b99;
+@blue-dark: #007ACC;
+@blue: #0099ff ;
+@blue-light: #32adff;
+@blue-lighter: #66c1ff;
+@blue-lightest: #99d6ff;
+
+@gray-darkest: lighten(#000, 13.5%);
+@gray-darker: lighten(#000, 20%);
+@gray-dark: lighten(#000, 33.5%);
+@gray: lighten(#000, 46.7%);
+@gray-light: lighten(#000, 60%);
+@gray-lighter: #cbcbcb;
+@gray-lightest: lighten(#000, 93.5%);
 
 // Global body background
 @page-background-color: #fff;
 
 // Top Header - Website Title */
-@header-background-color: #fff;
-@header-site-title-type-color: #75ca2a;
+@header-background-color: white;
+@header-site-title-type-bg-color: @green-dark;
+@header-site-title-type-color: white;
 @header-site-title-type-font-weight: 400;
 @header-site-title-type-font-size: 2.3em;
+@header-site-title-type-font-size-2: 2.3em;
 @header-site-title-type-text-transform: none;
-@header-site-title-type-font-family: @sans;
+@header-site-title-type-font-family: @lobster;
+@header-site-title-type-font-family-bottom: @alegreya-sc;
+
+// Top Header - Website Logo */
+@header-logo-bg-color: @green-darker;
+@header-logo-color: white;
+@header-logo-font-weight: 400;
+@header-logo-font-size-top: 40px;
+@header-logo-font-size-bot: 20px;
+@header-logo-text-transform: none;
+@header-logo-font-family-top: @lobster;
+@header-logo-font-family-bot: @alegreya-sc;
 
 // Top Header Search
-@header-search-input-icon-color: #cbcbcb;
-@header-search-input-border-color: #cbcbcb;
-@header-search-input-background-color: #ffffff;
+@header-search-input-icon-color: @gray-lighter;
+@header-search-input-border-color: @gray-lighter;
+@header-search-input-background-color: white;
+@header-search-input-radius: 2px;
+@header-search-input-focus-color: @blue;
 
 // Top Header - Main Navigation */
-@header-navigation-type-color: #0099ff;
-@header-navigation-type-font-size: 1.0em;
-@header-navigation-type-font-weight: 700;
-@header-navigation-type-font-family: 'Titillium Web';
+@header-navigation-type-color: @blue;
+@header-navigation-type-font-size: 20px;
+@header-navigation-type-font-weight: 600;
+@header-navigation-type-font-family: @alegreya-sc;
 @header-navigation-type-text-transform: none;
 
-@header-navigation-hover-color: #abddff;
+@header-navigation-hover-color: @gray-light;
 @header-navigation-menu-background-color: #fff;
 @header-navigation-menu-border-color: #edf2f3;
 @header-navigation-menu-background-hover-color: #D6F7FF;
 @header-navigation-menu-text-color: #a2a2a2;
 @header-navigation-menu-text-hover-color: #0099ff;
 
+@header-navigation-selected-color: @gray;
 // Typography
 @body-type-font-family: ~"'Helvetica Neue', Helvetica, Arial, sans-serif";
 @body-type-color: #6e6e6e;

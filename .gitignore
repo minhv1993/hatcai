@@ -1,5 +1,6 @@
 
 /application/files
-/application/config
+/application/config/local.database.php
 /bin
 web.config
+/application/config/generated_overrides
