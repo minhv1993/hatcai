@@ -33,19 +33,14 @@ header.hc-header {
     .nav {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-between;
         list-style: none;
         font-family: @header-navigation-type-font-family;
         color: @header-navigation-type-color;
         font-size: @header-navigation-type-font-size;
-        padding-top: 5px 0;
-        margin-top: 5px 0;
+        padding: 5px 0;
+        margin: 0;
         max-height: 38px;
-        
-        @media (min-width: 1024px) {
-            justify-content: space-between;
-            margin: 0;
-        }
 
         // global
         li {
@@ -115,26 +110,22 @@ header.hc-header {
         }
     }
 
-    .hc-auth-search {
-        position: absolute;
-        top: 0;
-        right: 0;
-        padding: 5px 0;
+    .hc-auth {
+        margin: 7px 0;
+        font-family: @andika;
+        font-size: 16px;
+        line-height: 16px;
+    }
 
-        .hc-auth {
-            padding: 4px 15px;
-            font-family: @andika;
-            font-size: 16px;
-        }
-
-        .hc-search {
-
-        }
+    .hc-search {
+        padding-right: 15px;
+        padding-left: 15px;
     }
     
     .ccm-search-block-form {
         position: relative;
-        
+        margin: 0;
+
         &:after {
             content: "\f002";
             font-family: FontAwesome;
@@ -161,7 +152,7 @@ header.hc-header {
             
             &:focus {
                 border-color: @header-search-input-focus-color;
-
+                color: @gray-darker;
             }
         }
     }

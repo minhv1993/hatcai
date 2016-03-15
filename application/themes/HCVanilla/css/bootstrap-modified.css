@@ -737,8 +737,8 @@ pre code {
 .container {
     margin-right: auto;
     margin-left: auto;
-    // padding-left: 15px;
-    // padding-right: 15px
+    padding-left: 15px;
+    padding-right: 15px
 }
 @media (min-width: 768px) {
     .container {
@@ -5036,7 +5036,8 @@ button.close {
 .visible-xs,
 .visible-sm,
 .visible-md,
-.visible-lg {
+.visible-lg,
+.visible-xl {
     display: none !important
 }
 .visible-xs-block,
@@ -5050,7 +5051,10 @@ button.close {
 .visible-md-inline-block,
 .visible-lg-block,
 .visible-lg-inline,
-.visible-lg-inline-block {
+.visible-lg-inline-block,
+.visible-xl-block,
+.visible-xl-inline,
+.visible-xl-inline-block {
     display: none !important
 }
 @media (max-width: 767px) {
@@ -5083,7 +5087,7 @@ button.close {
         display: inline-block !important
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .visible-sm {
         display: block !important
     }
@@ -5098,22 +5102,22 @@ button.close {
         display: table-cell !important
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .visible-sm-block {
         display: block !important
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .visible-sm-inline {
         display: inline !important
     }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .visible-sm-inline-block {
         display: inline-block !important
     }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1365px) {
     .visible-md {
         display: block !important
     }
@@ -5128,22 +5132,22 @@ button.close {
         display: table-cell !important
     }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1365px) {
     .visible-md-block {
         display: block !important
     }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1365px) {
     .visible-md-inline {
         display: inline !important
     }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1365px) {
     .visible-md-inline-block {
         display: inline-block !important
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1366px) and (max-width: 1679px) {
     .visible-lg {
         display: block !important
     }
@@ -5158,18 +5162,48 @@ button.close {
         display: table-cell !important
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1366px) and (max-width: 1679px) {
     .visible-lg-block {
         display: block !important
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1366px) {
     .visible-lg-inline {
         display: inline !important
     }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1366px) and (max-width: 1679px) {
     .visible-lg-inline-block {
+        display: inline-block !important
+    }
+}
+@media (min-width: 1680px) {
+    .visible-xl {
+        display: block !important
+    }
+    table.visible-xl {
+        display: table
+    }
+    tr.visible-xl {
+        display: table-row !important
+    }
+    th.visible-xl,
+    td.visible-xl {
+        display: table-cell !important
+    }
+}
+@media (min-width: 1680px) {
+    .visible-xl-block {
+        display: block !important
+    }
+}
+@media (min-width: 1680px) {
+    .visible-xl-inline {
+        display: inline !important
+    }
+}
+@media (min-width: 1680px) {
+    .visible-xl-inline-block {
         display: inline-block !important
     }
 }
@@ -5177,20 +5211,135 @@ button.close {
     .hidden-xs {
         display: none !important
     }
+
+    .no-padding-xs {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .margin-top-xs {
+        margin-top: 15px;
+    }
+    
+    .margin-bot-xs {
+        margin-bottom: 15px;
+    }
+    
+    .border-bot-xs {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #999;
+    }
+
+    .pull-right-xs {
+        float: right;
+    }
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .hidden-sm {
         display: none !important
     }
+
+    .no-padding-sm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .margin-top-sm {
+        margin-top: 15px;
+    }
+    
+    .margin-bot-sm {
+        margin-bottom: 15px;
+    }
+    
+    .border-bot-sm {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #999;
+    }
+
+    .pull-right-sm {
+        float: right;
+    }
 }
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1024px) and (max-width: 1365px) {
     .hidden-md {
         display: none !important
     }
+
+    .no-padding-md {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .margin-top-md {
+        margin-top: 15px;
+    }
+    
+    .margin-bot-md {
+        margin-bottom: 15px;
+    }
+    
+    .border-bot-md {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #999;
+    }
+
+    .pull-right-md {
+        float: right;
+    }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1366px) and (max-width: 1679px) {
     .hidden-lg {
         display: none !important
+    }
+
+    .no-padding-lg {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .margin-top-lg {
+        margin-top: 15px;
+    }
+    
+    .margin-bot-lg {
+        margin-bottom: 15px;
+    }
+    
+    .border-bot-lg {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #999;
+    }
+
+    .pull-right-lg {
+        float: right;
+    }
+}
+@media (min-width: 1680px) {
+    .hidden-xl {
+        display: none !important
+    }
+
+    .no-padding-xl {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .margin-top-xl {
+        margin-top: 15px;
+    }
+    
+    .margin-bot-xl {
+        margin-bottom: 15px;
+    }
+    
+    .border-bot-xl {
+        padding-bottom: 15px;
+        border-bottom: 1px solid #999;
+    }
+
+    .pull-right-xl {
+        float: right;
     }
 }
 .visible-print {
