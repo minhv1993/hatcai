@@ -2,7 +2,7 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
-<main>
+<main class="hc-main">
     <div class="container">
         <div class="row">
             <div class="col-sm-12">

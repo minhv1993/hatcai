@@ -3,7 +3,7 @@ defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
 <main class="hc-main">
-    test
+    Test
 <?php
 $a = new Area('Main');
 $a->enableGridContainer();

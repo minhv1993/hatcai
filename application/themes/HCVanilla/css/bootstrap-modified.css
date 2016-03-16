@@ -821,6 +821,9 @@ pre code {
   flex: 0 0 auto;
   padding-right: 15px;
   padding-left: 15px;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 }
 
 .xs {
@@ -1056,6 +1059,9 @@ pre code {
     flex: 0 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
   }
 
   .sm {
@@ -1151,6 +1157,10 @@ pre code {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
     max-width: 100%;
+  }
+  
+  .sm-offset-0 {
+    margin-left: 0;
   }
 
   .sm-offset-1 {
@@ -1292,6 +1302,9 @@ pre code {
     flex: 0 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
   }
 
   .md {
@@ -1387,6 +1400,10 @@ pre code {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
     max-width: 100%;
+  }
+  
+  .md-offset-0 {
+    margin-left: 0;
   }
 
   .md-offset-1 {
@@ -1528,6 +1545,9 @@ pre code {
     flex: 0 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
   }
 
   .lg {
@@ -1623,6 +1643,10 @@ pre code {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
     max-width: 100%;
+  }
+  
+  .lg-offset-0 {
+    margin-left: 0;
   }
 
   .lg-offset-1 {
@@ -1764,6 +1788,9 @@ pre code {
     flex: 0 0 auto;
     padding-right: 15px;
     padding-left: 15px;
+    -webkit-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
   }
 
   .xl {
@@ -1859,6 +1886,10 @@ pre code {
     -webkit-flex-basis: 100%;
     flex-basis: 100%;
     max-width: 100%;
+  }
+  
+  .xl-offset-0 {
+    margin-left: 0;
   }
 
   .xl-offset-1 {
