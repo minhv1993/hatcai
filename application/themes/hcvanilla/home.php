@@ -6,15 +6,10 @@ $this->inc('elements/header.php'); ?>
     <section class="hc-hero parallax">
         <div class="parallax-layer parallax parallax-layer-1 hc-hero-image">
         </div>
-        <div class="parallax-layer parallax-layer-0">
-            <div class="row">
-                <div class="xs-12 md-4">
-                    <section class="container hc-hero-text">
-                        <?php
-                        $a = new Area('Hero');
-                        $a->display($c);
-                        ?>
-                    </section>
+        <div class="parallax-layer parallax-layer-0 container">
+            <div class="row full-height-xs full-height-sm full-height-md full-height-lg full-height-xl">
+                <div class="xs-12 sm-12 md-5 no-padding-xs no-padding-sm full-height-xs full-height-sm full-height-md full-height-lg full-height-xl">
+                    <div class="hc-hero-text"></div>
                 </div>
             </div>
         </div>

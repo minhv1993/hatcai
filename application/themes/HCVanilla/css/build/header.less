@@ -83,13 +83,45 @@ header.hc-header {
                 > ul {
                     display: flex;
                     flex-direction: column;
-                    position: absolute;
                     text-align: center;
                     list-style-type: none;
-                    margin-left: -42%;
                     padding: 0;
-                    padding-top: 5px;
-                    visibility: hidden;
+                    padding-top: 10px;
+                    z-index: 10;
+                    background: white;
+                    border-bottom: 1px solid @header-navigation-dropdown-color;
+
+                    &:before {
+                        content: "\f0d8";
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        border-bottom: 1px solid @header-navigation-dropdown-color;
+                        font-family: FontAwesome;
+                        color: @header-navigation-dropdown-color;
+                        font-size: 30px;
+                        line-height: 11px;
+                        top: 26px;
+                    }
+
+                    @media (min-width: 768px){
+                        position: absolute;
+                        margin-left: -42%;
+                        visibility: hidden;
+                        padding-top: 21px;
+                        
+                        &:before {
+                            top: 9px;
+                        }
+                    }
+                    
+                    @media (min-width: 1024px){
+                        padding-top: 6px;
+                        
+                        &:before {
+                            top: -6px;
+                        }
+                    }
 
                     > li {
                         padding: 5px 10px;
@@ -186,8 +218,18 @@ header.hc-header {
                 }
             }
         }
-        
+
         @media (max-width: 767px){
+                
+            .boxed {
+                max-height: 46px;
+            }
+
+            .nav-wrapper {
+                max-height: calc(~"100% - 137px");
+                overflow: auto;
+            }
+
             &.active {
                 position: fixed;
                 background: white;
@@ -198,6 +240,7 @@ header.hc-header {
                 bottom: 0;
                 box-shadow: 3px 0px 10px @gray;
                 z-index: 5;
+
 
                 .nav {
                     padding: 0;

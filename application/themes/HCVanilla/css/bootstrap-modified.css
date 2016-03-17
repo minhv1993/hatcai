@@ -3361,7 +3361,7 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
 }
 .nav>li>a:hover, .nav>li>a:focus {
     text-decoration:none;
-    background-color:#eee
+    background-color:transparent
 }
 .nav>li.disabled>a {
     color:#777
@@ -5029,8 +5029,8 @@ button.close {
     border-bottom-color:#000
 }
 .clearfix:before, .clearfix:after, .dl-horizontal dd:before, .dl-horizontal dd:after, .container:before, .container:after, .container-fluid:before, .container-fluid:after, .row:before, .row:after, .form-horizontal .form-group:before, .form-horizontal .form-group:after, .btn-toolbar:before, .btn-toolbar:after, .btn-group-vertical>.btn-group:before, .btn-group-vertical>.btn-group:after, .nav:before, .nav:after, .navbar:before, .navbar:after, .navbar-header:before, .navbar-header:after, .navbar-collapse:before, .navbar-collapse:after, .pager:before, .pager:after, .panel-body:before, .panel-body:after {
-    content:" ";
-    display:table
+    /*content:" ";
+    display:table*/
 }
 .clearfix:after, .dl-horizontal dd:after, .container:after, .container-fluid:after, .row:after, .form-horizontal .form-group:after, .btn-toolbar:after, .btn-group-vertical>.btn-group:after, .nav:after, .navbar:after, .navbar-header:after, .navbar-collapse:after, .pager:after, .panel-body:after {
     clear:both
@@ -5274,6 +5274,14 @@ button.close {
     .pull-right-xs {
         float:right;
     }
+    
+    .full-height-xs {
+        height: 100%;
+    }
+    
+    .column-xs {
+        flex-flow: column;
+    }
 }
 @media (min-width:768px) and (max-width:1023px) {
     .hidden-sm {
@@ -5300,6 +5308,14 @@ button.close {
 
     .pull-right-sm {
         float:right;
+    }
+    
+    .full-height-sm {
+        height: 100%;
+    }
+    
+    .column-sm {
+        flex-flow: column;
     }
 }
 @media (min-width:1024px) and (max-width:1365px) {
@@ -5328,6 +5344,14 @@ button.close {
     .pull-right-md {
         float:right;
     }
+    
+    .full-height-md {
+        height: 100%;
+    }
+    
+    .column-md {
+        flex-flow: column;
+    }
 }
 @media (min-width:1366px) and (max-width:1679px) {
     .hidden-lg {
@@ -5355,6 +5379,14 @@ button.close {
     .pull-right-lg {
         float:right;
     }
+    
+    .full-height-lg {
+        height: 100%;
+    }
+    
+    .column-lg {
+        flex-flow: column;
+    }
 }
 @media (min-width:1680px) {
     .hidden-xl {
@@ -5381,6 +5413,14 @@ button.close {
 
     .pull-right-xl {
         float:right;
+    }
+    
+    .full-height-xl {
+        height: 100%;
+    }
+    
+    .column-xl {
+        flex-flow: column;
     }
 }
 .visible-print {
