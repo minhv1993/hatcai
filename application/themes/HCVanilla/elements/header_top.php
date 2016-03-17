@@ -9,7 +9,7 @@
     <?php echo $html->css($view->getStylesheet('main.less'))?>
     <?php Loader::element('header_required', array('pageTitle' => isset($pageTitle) ? $pageTitle : '', 'pageDescription' => isset($pageDescription) ? $pageDescription : ''));?>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//cdn.muicss.com/mui-0.4.7/js/mui.min.js"></script>
+    <script src="//cdn.muicss.com/mui-0.4.7/js/mui.min.js" type="text/javascript"></script>
     <script>
         if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
             var msViewportStyle = document.createElement('style')
@@ -20,11 +20,11 @@
             )
             document.querySelector('head').appendChild(msViewportStyle)
         }
-
-        function toggleMenu(){
+        function toggleMenu() {
             $("#menu-toggle, #menu").toggleClass("active");
         }
-    </script>
+    </script>    
+    <script src="<?php echo $view->getThemePath()?>/js/default.js" type="text/javascript"></script>
 </head>
 <body>
 

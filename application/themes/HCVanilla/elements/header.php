@@ -5,7 +5,7 @@ $this->inc('elements/header_top.php');
 <header class="hc-header">
   <div class="container">
     <div class="row bottom-xs">
-      <div class="xs-12 md-4 no-padding-xs no-padding-sm no-padding-md margin-bot-sm">
+      <div class="xs-12 md-4 no-padding-xs no-padding-sm margin-bot-sm">
         <a class="hc-logo" href="/">
           <span class="logo-top">Hạt Cải</span>
           <span class="logo-bottom">Mustard Seed</span>

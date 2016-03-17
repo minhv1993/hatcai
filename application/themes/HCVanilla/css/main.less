@@ -23,7 +23,6 @@
 div.ccm-page {
   @import "build/errors.less";
   @import "build/header.less";
-  @import "build/main.less";
   @import "build/pagination.less";
   @import "build/breadcrumb.less";
   @import "build/captcha.less";
@@ -36,6 +35,7 @@ div.ccm-page {
   @import "build/custom-design-classes/recent-blog-entry.less";
   @import "build/custom-design-classes/area-content-accent.less";
   @import "build/custom-design-classes/testimonial-bio.less";
+  @import "build/custom-design-classes/parallax.less";
 
   @import "build/blocks/faq.less";
   @import "build/blocks/feature.less";
@@ -55,6 +55,9 @@ div.ccm-page {
   @import "build/blocks/date-navigation.less";
 
   @import "build/add-ons/calendar.less";
+
+  // Main is last to overide stuff if needed
+  @import "build/main.less";
 }
 
 @import "build/miscellaneous-styles.less";
