@@ -1,16 +1,16 @@
 .parallax {
     position: relative;
-    height: @parallax-height-phone;
+    height: @prefered-height-xs;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
 
     @media (min-width: 768px){
-        height: @parallax-height-tablet;
+        height: @prefered-height-sm;
     }
     
     @media (min-width: 1024px){
-        height: @parallax-height;
+        height: @prefered-height-md;
     }
 
     .parallax-layer {

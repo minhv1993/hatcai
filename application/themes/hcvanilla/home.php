@@ -14,7 +14,14 @@ $this->inc('elements/header.php'); ?>
             </div>
         </div>
     </section>
-    <section class="hc-features container">
+    <section class="hc-image-slider container">
+        <?php
+        $a = new Area('Slider');
+        $a->enableGridContainer();
+        $a->display($c);
+        ?>
+    </section>
+    <section class="hc-features">
         <?php
         $a = new Area('Features');
         $a->enableGridContainer();

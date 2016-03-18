@@ -1,0 +1,151 @@
+.hc-image-slider-container {
+    /* background-image is moved to main.less because it needs to be in the theme root */
+    background-color: transparent;
+    background-repeat: repeat;
+    position: relative;
+    
+    .hc-image-slider-wrapper {
+        position: relative;
+    }
+    .rslides {
+        position: relative;
+
+        li {
+            height: @prefered-height-xs;
+            max-height: @prefered-height-xs;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+
+            .mega-link-overlay {
+                height: 100%;
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    @media (min-width: @screen-sm-min) {
+        .rslides {
+            li {
+                max-height: @prefered-height-sm;
+                height: @prefered-height-sm;
+            }
+        }
+    }
+    
+    @media (min-width: @screen-md-min) {
+        .rslides {
+            li {
+            max-height: @prefered-height-md;
+            height: @prefered-height-md;
+            }
+        }
+    }
+    .rslides_nav {
+        top: 0;
+        background: rgba(0,0,0,0.5);
+        bottom: 0;
+        color: white;
+        height: auto;
+        width: 5%;
+        min-width: 50px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        &.next {
+            color: white;
+            .transition(background .35s ease-in-out);
+            right: 0;
+            &:after {
+                .transition(background .35s ease-in-out);
+                content: "\f054";
+                font-family: FontAwesome;
+                font-size: 32px;
+            }
+            &:hover {
+                text-decoration: none;
+                color: black;
+                background: rgba(255,255,255,.5);
+            }
+        }
+        &.prev {
+            color: white;
+            .transition(background .35s ease-in-out);
+            left: 0;
+            &:before {
+                .transition(background .35s ease-in-out);
+                content: "\f053";
+                font-family: FontAwesome;
+                font-size: 32px;
+            }
+            &:hover {
+                text-decoration: none;
+                color: black;
+                background: white;
+            }
+        }
+    }
+    .rslides_tabs {
+        padding-left: 0px;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-right: 5px;
+            &.rslides_here {
+                a {
+                    background: @image-slider-navigation-active-color;
+                }
+            }
+            a {
+                overflow: hidden;
+                text-indent: 99px;
+                background: @image-slider-navigation-color;
+                width: 15px;
+                height: 15px;
+                display: inline-block;
+                margin-right: 10px;
+                .border-radius(30px);
+            }
+        }
+    }
+
+    .hc-image-slider-text {
+        display: flex;
+        max-width: calc(~"100% - 100px");
+        width: 100%;
+        margin: 0 auto;
+        flex-flow: column;
+        justify-content: flex-end;
+        height: 100%;
+
+        h2 {
+            color: white;
+            font-family: @image-slider-title-type-font-family;
+            font-size: @image-slider-title-type-font-size;
+            font-weight: @image-slider-title-type-font-weight;
+            background: rgba(0,0,0,0.5);
+            margin: 0;
+            padding: 5px 10px;
+        }
+
+        p {
+            color: white;
+            font-family: @image-slider-paragraph-type-font-family;
+            font-size: @image-slider-paragraph-type-font-size;
+            font-weight: @image-slider-paragraph-type-font-weight;
+            background: rgba(0,0,0,0.5);
+            margin: 0;
+            padding: 5px 10px;
+        }
+    }
+
+    // next and previous
+    &.hc-block-image-slider-arrows {
+    }
+}
+
