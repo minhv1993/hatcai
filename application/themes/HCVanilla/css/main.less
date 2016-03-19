@@ -58,7 +58,13 @@ div.ccm-page {
   @import "build/add-ons/calendar.less";
 
   // Main is last to overide stuff if needed
-  @import "build/home.less";
+  .hc-home {
+    @import "build/home.less";
+  }
+
+  .hc-full {
+
+  }
 }
 
 @import "build/miscellaneous-styles.less";
@@ -70,4 +76,15 @@ div.ccm-page {
  */
 .ccm-image-slider-container {
   background-image: url(@image-slider-background-image);
+}
+main.hc-main {
+    margin-top: 80px;
+
+    @media(min-width: 768px){
+        margin-top: 209px;
+    }
+
+    @media(min-width: 1024px){
+        margin-top: 80px;
+    }
 }

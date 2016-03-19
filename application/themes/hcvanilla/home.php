@@ -2,7 +2,7 @@
 defined('C5_EXECUTE') or die("Access Denied.");
 $this->inc('elements/header.php'); ?>
 
-<main class="hc-main">
+<main class="hc-main hc-home">
     <section class="hc-hero parallax">
         <div class="parallax-layer parallax parallax-layer-1 hc-hero-image">
         </div>

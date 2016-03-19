@@ -1,28 +1,29 @@
-main.hc-main {
-    margin-top: 80px;
+// Parent is .hc-home
+.hc-hero {
 
-    @media(min-width: 768px){
-        margin-top: 209px;
+    .hc-hero-image {
+        background-image: url(../../images/background_hero.png);
+        background-repeat: @hero-image-repeat;
     }
 
-    @media(min-width: 1024px){
-        margin-top: 80px;
+    .hc-hero-text {
+        height: 100%;
+        background: rgba(255,255,255,.5);
     }
+}
 
-    .hc-hero {
+.hc-image-slider {
+    @media (min-width: @screen-md-min) {
+        .hc-image-slider-text {
+            width: auto;
+            left: 39.9%;
+            right: 5%;
+            justify-content: flex-start;
+            background: rgba(0,0,0,.5);
 
-        .hc-hero-image {
-            background-image: url(../../images/background_hero.png);
-            background-repeat: @hero-image-repeat;
+            .hc-image-slider-title, p {
+                background: transparent;
+            }
         }
-
-        .hc-hero-text {
-            height: 100%;
-            background: rgba(255,255,255,.5);
-        }
-    }
-
-    .hc-image-slider {
-
     }
 }

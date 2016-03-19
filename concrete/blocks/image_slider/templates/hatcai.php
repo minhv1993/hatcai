@@ -37,12 +37,14 @@ $(document).ready(function(){
                 <?php if($row['linkURL']) { ?>
                     <a href="<?php echo $row['linkURL'] ?>" class="mega-link-overlay"></a>
                 <?php } ?>
+                <?php if($row['title'] || $row['description']) { ?>
                 <div class="hc-image-slider-text">
                     <?php if($row['title']) { ?>
                     	<h2 class="hc-image-slider-title"><?php echo $row['title'] ?></h2>
                     <?php } ?>
                     <?php echo $row['description'] ?>
                 </div>
+                <?php } ?>
                 </li>
             <?php } ?>
             </ul>
