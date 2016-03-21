@@ -31,7 +31,7 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
         $this->requireAsset('javascript-conditional', 'respond');
     }
 
-    protected $pThemeGridFrameworkHandle = 'bootstrap3';
+    protected $pThemeGridFrameworkHandle = 'flexbox';
 
     public function getThemeName()
     {

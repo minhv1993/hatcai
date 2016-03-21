@@ -9,7 +9,12 @@ $this->inc('elements/header.php'); ?>
         <div class="parallax-layer parallax-layer-0 container">
             <div class="row full-height-xs full-height-sm full-height-md full-height-lg full-height-xl">
                 <div class="xs-12 sm-12 md-5 no-padding-xs no-padding-sm full-height-xs full-height-sm full-height-md full-height-lg full-height-xl">
-                    <div class="hc-hero-text"></div>
+                    <div class="hc-hero-text">
+                    <?php
+                        $a = new Area('Hero Text');
+                        $a->display($c);
+                    ?>
+                    </div>
                 </div>
             </div>
         </div>
