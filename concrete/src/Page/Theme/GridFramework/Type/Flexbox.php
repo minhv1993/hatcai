@@ -40,7 +40,6 @@ class Flexbox extends GridFramework
     public function getPageThemeGridFrameworkColumnClasses()
     {
         $columns = array(
-            'sm',
             'sm-1',
             'sm-2',
             'sm-3',

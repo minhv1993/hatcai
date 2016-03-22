@@ -86,7 +86,7 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
     public function getThemeResponsiveImageMap()
     {
         return array(
-            'large' => '900px',
+            'large' => '1024px',
             'medium' => '768px',
             'small' => '0',
         );
@@ -113,8 +113,8 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
                 'name' => 'Left Sidebar',
                 'container' => '<div class="row"></div>',
                 'columns' => array(
-                    '<div class="col-sm-4"></div>',
-                    '<div class="col-sm-8"></div>'
+                    '<div class="xs-12 sm-4"></div>',
+                    '<div class="xs-12 sm-8"></div>'
                 ),
             ),
             array(
@@ -122,8 +122,37 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme implements ThemeProvider
                 'name' => 'Right Sidebar',
                 'container' => '<div class="row"></div>',
                 'columns' => array(
-                    '<div class="col-sm-8"></div>',
-                    '<div class="col-sm-4"></div>'
+                    '<div class="xs-12 sm-8"></div>',
+                    '<div class="xs-12 sm-4"></div>'
+                ),
+            ),
+            array(
+                'handle' => 'two_sidebar',
+                'name' => 'Two Sidebar',
+                'container' => '<div class="row"></div>',
+                'columns' => array(
+                    '<div class="xs-12 sm-3"></div>',
+                    '<div class="xs-12 sm-6"></div>',
+                    '<div class="xs-12 sm-3"></div>'
+                ),
+            ),
+            array(
+                'handle' => 'three_rows',
+                'name' => 'Three Rows',
+                'container' => '<div class="row"></div>',
+                'columns' => array(
+                    '<div class="xs-12"></div>',
+                    '<div class="xs-12"></div>',
+                    '<div class="xs-12"></div>'
+                ),
+            ),
+            array(
+                'handle' => 'two_rows',
+                'name' => 'Two Rows',
+                'container' => '<div class="row"></div>',
+                'columns' => array(
+                    '<div class="xs-12"></div>',
+                    '<div class="xs-12"></div>'
                 ),
             )
         );
