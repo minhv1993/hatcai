@@ -60,11 +60,17 @@ div.ccm-page {
   }
 
   // Special styles for blog entry page type, making sure the sidebar contents get pushed down
-  &.page-type-blog-entry {
-    div.col-sidebar {
-      padding-top: 40px;
+    &.page-type-blog-entry {
+        div.col-sidebar {
+            padding-top: 40px;
+            border-top: 2px solid @gray-darker;
+
+            @media(min-width: @screen-sm-min){
+                border-top: none;
+                border-left: 2px solid @gray-darker;
+            }
+        }
     }
-  }
 
     div.sidebar-col, div.content-col {
         font-size: 16px;
@@ -81,6 +87,20 @@ div.ccm-page {
         hr {
             margin-top: @line-height-computed;
             margin-bottom: @line-height-computed;
+        }
+    }
+    div.sidebar-col {
+        border-top: 2px solid @gray-dark;
+
+        @media(min-width: @screen-sm-min){
+            border-top: none;
+            &.left {
+                border-right: 2px solid @gray-dark;
+            }
+
+            &.right {
+                border-left: 2px solid @gray-dark;
+            }
         }
     }
 }

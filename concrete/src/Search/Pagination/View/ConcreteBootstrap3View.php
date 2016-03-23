@@ -14,8 +14,8 @@ class ConcreteBootstrap3View extends TwitterBootstrap3View implements ViewInterf
     public function getArguments()
     {
         $arguments = array(
-            'prev_message' => tc('Pagination', '&larr; Previous'),
-            'next_message' => tc('Pagination', 'Next &rarr;'),
+            'prev_message' => tc('Pagination', 'Prev'),
+            'next_message' => tc('Pagination', 'Next'),
             'active_suffix' => '<span class="sr-only">' . tc('Pagination', '(current)') . '</span>'
         );
         return $arguments;

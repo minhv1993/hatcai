@@ -23,7 +23,8 @@
             <a class="hc-next-wrapper" href="<?php echo $nextLinkURL;?>" title="<?php echo $nextLabel?>">
                 <span><?php echo $nextLinkText;?></span>
             </a>
-        </<?php } ?>
+        </div>
+        <?php } ?>
 
         <?php if ($parentLinkText) { ?>
         <div class="xs-12">
