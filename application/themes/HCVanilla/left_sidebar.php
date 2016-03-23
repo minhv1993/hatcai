@@ -10,7 +10,7 @@ $this->inc('elements/header.php'); ?>
     ?>
     <div class="container">
         <div class="row">
-            <div class="xs-12 sm-4 md-3 sidebar-col left last-xs">
+            <div class="xs-12 sm-4 md-3 last-xs first-sm sidebar-col left">
                 <?php
                 $a = new Area('Sidebar');
                 $a->display($c);
