@@ -10,14 +10,14 @@ $this->inc('elements/header.php'); ?>
     ?>
     <div class="container">
         <div class="row">
-            <div class="sm-8 col-content">
+            <div class="xs-12 sm-8 md-9 content-col">
                 <?php
                 $a = new Area('Main');
                 $a->setAreaGridMaximumColumns(12);
                 $a->display($c);
                 ?>
             </div>
-            <div class="sm-offset-1 sm-3 col-sidebar">
+            <div class="xs-12 sm-4 md-3 sidebar-col">
                 <?php
                 $a = new Area('Sidebar');
                 $a->display($c);

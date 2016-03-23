@@ -1,0 +1,29 @@
+.hc-block-next-previous {
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    .hc-next-wrapper, .hc-previous-wrapper {
+        align-items: center;
+        display: flex;
+    }
+    .hc-previous-wrapper {
+        justify-content: flex-start;
+        &:before {
+            content:"\f053";
+            font-family: FontAwesome;
+            padding-right: 5px;
+            font-size: 24px;
+        }
+    }
+    .hc-next-wrapper {
+        text-align: right;
+        justify-content: flex-end;
+        &:after {
+            content:"\f054";
+            font-family: FontAwesome;
+            padding-left: 5px;
+            font-size: 24px;
+        }
+    }
+}

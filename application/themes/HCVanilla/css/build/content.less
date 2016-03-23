@@ -66,11 +66,21 @@ div.ccm-page {
     }
   }
 
-  div.col-sidebar {
-    hr {
-      margin-top: @line-height-computed;
-      margin-bottom: @line-height-computed;
-    }
-  }
+    div.sidebar-col, div.content-col {
+        font-size: 16px;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
+        @media(min-width: @screen-sm-min){
+            font-size: 18px;
+        }
+
+        @media(min-width: @screen-md-min){
+            font-size: 20px;
+        }
+        hr {
+            margin-top: @line-height-computed;
+            margin-bottom: @line-height-computed;
+        }
+    }
 }

@@ -40,18 +40,18 @@ class Flexbox extends GridFramework
     public function getPageThemeGridFrameworkColumnClasses()
     {
         $columns = array(
-            'sm-1',
-            'sm-2',
-            'sm-3',
-            'sm-4',
-            'sm-5',
-            'sm-6',
-            'sm-7',
-            'sm-8',
-            'sm-9',
-            'sm-10',
-            'sm-11',
-            'sm-12'
+            'xs-1',
+            'xs-2',
+            'xs-3',
+            'xs-4',
+            'xs-5',
+            'xs-6',
+            'xs-7',
+            'xs-8',
+            'xs-9',
+            'xs-10',
+            'xs-11',
+            'xs-12'
         );
         return $columns;
     }
@@ -59,18 +59,18 @@ class Flexbox extends GridFramework
     public function getPageThemeGridFrameworkColumnOffsetClasses()
     {
         $offsets = array(
-            'sm-offset-1',
-            'sm-offset-2',
-            'sm-offset-3',
-            'sm-offset-4',
-            'sm-offset-5',
-            'sm-offset-6',
-            'sm-offset-7',
-            'sm-offset-8',
-            'sm-offset-9',
-            'sm-offset-10',
-            'sm-offset-11',
-            'sm-offset-12'
+            'xs-offset-1',
+            'xs-offset-2',
+            'xs-offset-3',
+            'xs-offset-4',
+            'xs-offset-5',
+            'xs-offset-6',
+            'xs-offset-7',
+            'xs-offset-8',
+            'xs-offset-9',
+            'xs-offset-10',
+            'xs-offset-11',
+            'xs-offset-12'
         );
         return $offsets;
     }
@@ -78,17 +78,17 @@ class Flexbox extends GridFramework
     public function getPageThemeGridFrameworkColumnAdditionalClasses()
     {
         $offsets = array(
-            'start-sm',
-            'center-sm',
-            'end-sm',
-            'top-sm',
-            'middle-sm',
-            'bottom-sm',
-            'around-sm',
-            'between-sm',
-            'first-sm',
-            'last-sm',
-            'reverse-sm',
+            'start-xs',
+            'center-xs',
+            'end-xs',
+            'top-xs',
+            'middle-xs',
+            'bottom-xs',
+            'around-xs',
+            'between-xs',
+            'first-xs',
+            'last-xs',
+            'reverse-xs',
         );
         return '';
     }
