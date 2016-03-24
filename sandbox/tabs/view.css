@@ -1,0 +1,35 @@
+.hc-tabs {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    border-bottom: 2px solid #999;
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hc-tabs  .hc-tabs-tab {
+    flex-basis: 100%;
+    text-align: center;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+    margin-bottom: -2px;
+    padding: 5px 10px;
+}
+
+.hc-tabs  .hc-tabs-tab.active {
+    border-color: #005A31;
+}
+
+.hc-tabs  .hc-tabs-tab:hover {
+    border-color: #777;
+}
+
+.hc-tabs-content {
+    display: none;
+}
+
+.hc-tabs-content.active, .hc-tabs-content.editmode {
+    display: block;
+}
