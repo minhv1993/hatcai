@@ -4,3 +4,4 @@
 /bin
 web.config
 /application/config/generated_overrides
+/application/config/database.php
